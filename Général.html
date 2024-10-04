@@ -1,0 +1,73 @@
+<!-- 
+	HTML veut dire HyperText Markup Language, c'est un langage de balisage ( pas de programmation ), il y a des balises qui doivent s'ouvrir et se fermer comme <h1></h1>, et des balises dites orpheline comme <img src="">.
+	Chaque page web est la plupart du temps un document HTML interprété par le navigateur.
+	La page principale du site devra s'appeler index.HTML.
+	L'indentation sert surtout à s'organiser, il n'a pas d'impact sur la lecture du document. 
+-->
+
+
+<!DOCTYPE html>																	<!-- Ceci ne sert qu'à prévenir le navigateur de la version d'HTML, ici HTML5 -->
+
+<html lang="fr">                                                                <!-- Balise à fermer obligatoire, la racine de la page, on précise la langue via l'attribut <lang> -->
+
+
+<head>																			<!-- Sert à indiquer les métadonnées du site, comme le titre ou l'encodage -->
+	
+	<meta charset="utf-8">														<!-- Informe le navigateur de l'encodage, l'UTF-8 est la norme partout -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">		<!-- Rends le site Responsive, permettant un affiche adapté selon l'appareil utilisé -->
+	
+	<title>Introduction HTML</title>											<!-- Titre pour la page, on pourra le voir sur l'onglet -->
+
+</head>
+
+
+
+<body>																			<!-- Contenu visible de la page -->
+	
+
+	<h1>Je suis le titre le plus important</h1>									<!-- Balise de titre structurel et sémantique, allant de <h1> à <h6> -->
+		
+
+		<p>Je suis un paragraphe<br>avec un saut à la ligne</p>					<!-- Balise pour créer un paragraphe, à la valeur bloc par défaut. La balise <br> permet un saut visible à la ligne -->
+		<p><em>Je suis un paragraphe avec une emphase</em></p>					<!-- <em> aura tendance à être visuellement en italique, mais a surtout une valeur sémentique, de même pour <strong> qui -->
+		<p><strong>Je suis un paragraphe important</strong></p>					<!-- sera souvent affiché en gras -->
+
+	<h2>Je suis un peu moins important</h2>
+
+
+		<a href="https://www.bullshit.com/">Site bullshit</a>					<!-- Permet de créer un lien, <href> contenant le lien du site affiché grâce au terme entre balises, ici "Site bullshit" -->
+		<a href="mailto:myadress@mail.com">Me contacter</a>						<!-- Permet à l'utilisateur d'ouvrir sa boite mail avec l'adresse de <href> prérempli en destinataire -->
+		<a href="doc.html">Autre partie du site</a>								<!-- Créer un lien permettant de naviguer dans l'enceinte du même site web, "doc.html devant être dans le même dossier que 																				 index.html" -->
+
+	<h6>Je suis le titre le moins important</h6>
+
+
+		<img src="https://imagedeouf.com">										<!-- Affiche une image grâce à un lien -->
+		<img src="image.jpg">													<!-- Affiche une image se trouvant dans le même dossier que le fichier HTML -->
+		<img src="image/image.png">												<!-- Affiche une image se trouvant dans un dossier se trouvant lui-même dans le dossier du fichier HTML -->
+
+
+
+	<h6>Voici une liste non-ordonnée</h6>										<!-- <ul> (unordered list) crée une liste à points, <li> ajoute des élements à cette liste -->
+	<ul>
+		<li>Eau</li>
+		<li>Feu</li>
+		<li>Vent</li>
+		<li>Terre</li>
+	</ul>
+
+
+
+	<h6>Les étapes du deuil:</h6>												<!-- <ol> (ordered list) permet de créer une liste numérotée, <li> ajoute à nouveaux les élèments -->	
+	<ol>
+		<li>Le déni</li>
+		<li>La colère</li>
+		<li>Le marchandage</li>
+		<li>La dépression</li>
+		<li>L'acceptation</li>
+	</ol>
+
+
+</body>
+</html>
