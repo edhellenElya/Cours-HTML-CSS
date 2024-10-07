@@ -1,4 +1,25 @@
-<!DOCTYPE html>
-<html style="italic">
+                    <!-- OBSOLETE -->
 
-</html>
+<b>Mot en gras</b>              <!-- Aucune valeur sémentique, remplacer par CSS -->
+<i>Mot en italique</i>          <!-- Même chose que <b> -->
+
+                    <!-- MUST KNOW -->
+
+<!-- Les entités HTML sont des caractères spéciaux qui ne peuvent pas être 
+directement utilisés dans le texte HTML car ils pourraient être interprétés comme du code. -->
+
+&lt;                            <!-- équivalent de < -->
+&gt;                            <!-- équivalent de > -->
+&amp;                           <!-- équivalent de & -->
+&nbsp;                          <!-- représente un espace insécable -->
+
+<p>Utiliser &lt;code&gt;</p>    <!-- Permettra d'afficher "Utiliser <code>" sans que cela soit confondu avec du code -->
+
+<!-- <span> et <div> sont des balises qui permettent de créer des sections, elles doivent être utilisées si
+aucune autre balises structurel n'as sa place. <div> créer une section bloc 
+alors que span découpe une section inline -->
+
+<div>
+    <h1>Première section</h1>
+    <p>Une section dans une phrase:<span>prout</span></p>
+</div>

@@ -5,11 +5,9 @@
 	L'indentation sert surtout à s'organiser, il n'a pas d'impact sur la lecture du document. 
 -->
 
-
 <!DOCTYPE html>																	<!-- Ceci ne sert qu'à prévenir le navigateur de la version d'HTML, ici HTML5 -->
 
 <html lang="fr">                                                                <!-- Balise à fermer obligatoire, la racine de la page, on précise la langue via l'attribut <lang> -->
-
 
 <head>																			<!-- Sert à indiquer les métadonnées du site, comme le titre ou l'encodage -->
 	
@@ -19,22 +17,21 @@
 	
 	<title>Introduction HTML</title>											<!-- Titre pour la page, on pourra le voir sur l'onglet -->
 
+	<link rel="stylesheet" href="stylesheet.css">								<!-- Permet de lier le fichier contenant le code CSS, il s'agit de la meilleure façon d'utiliser CSS -->
+
 </head>
 
-
-
 <body>																			<!-- Contenu visible de la page -->
-	
+
+<main>																			<!-- Balise syntaxique indiquer la partie principale de la page -->
 
 	<h1>Je suis le titre le plus important</h1>									<!-- Balise de titre structurel et sémantique, allant de <h1> à <h6> -->
 		
-
 		<p>Je suis un paragraphe<br>avec un saut à la ligne</p>					<!-- Balise pour créer un paragraphe, à la valeur bloc par défaut. La balise <br> permet un saut visible à la ligne -->
 		<p><em>Je suis un paragraphe avec une emphase</em></p>					<!-- <em> aura tendance à être visuellement en italique, mais a surtout une valeur sémentique, de même pour <strong> qui -->
 		<p><strong>Je suis un paragraphe important</strong></p>					<!-- sera souvent affiché en gras -->
 
-	<h2>Je suis un peu moins important</h2>
-
+	<h2>J'aime l'<abbr title="HyperText Markup Language">HTML</abbr></h2>		<!-- <abbr> sert à indiquer l'utilisation d'une abbréviation, nous pouvons donner plus d'information grâce à title (une fenêtre s'affichera en survolant avec la souris) -->
 
 		<a href="https://www.bullshit.com/">Site bullshit</a>					<!-- Permet de créer un lien, <href> contenant le lien du site affiché grâce au terme entre balises, ici "Site bullshit" -->
 		<a href="mailto:myadress@mail.com">Me contacter</a>						<!-- Permet à l'utilisateur d'ouvrir sa boite mail avec l'adresse de <href> prérempli en destinataire -->
@@ -42,12 +39,9 @@
 
 	<h6>Je suis le titre le moins important</h6>
 
-
 		<img src="https://imagedeouf.com">										<!-- Affiche une image grâce à un lien -->
 		<img src="image.jpg">													<!-- Affiche une image se trouvant dans le même dossier que le fichier HTML -->
 		<img src="image/image.png">												<!-- Affiche une image se trouvant dans un dossier se trouvant lui-même dans le dossier du fichier HTML -->
-
-
 
 	<h6>Voici une liste non-ordonnée</h6>										<!-- <ul> (unordered list) crée une liste à points, <li> ajoute des élements à cette liste -->
 	<ul>
@@ -56,8 +50,6 @@
 		<li>Vent</li>
 		<li>Terre</li>
 	</ul>
-
-
 
 	<h6>Les étapes du deuil:</h6>												<!-- <ol> (ordered list) permet de créer une liste numérotée, <li> ajoute à nouveaux les élèments -->	
 	<ol>
@@ -68,6 +60,48 @@
 		<li>L'acceptation</li>
 	</ol>
 
+	<ol>																		<!-- Il est possible d'imbriquer des listes pour une meilleure organisation -->
+		<li>A apprendre:</li>
+		<ul>
+			<li>Python</li>
+			<li>JavaScript</li>
+		</ul>
+		<li>Acquis:</li>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ul>
+	</ol>
 
+	<blockquote>																<!-- Permet d'insérer une citation en bloc -->
+		"Ceci est une longue citation..........."
+	</blockquote>
+
+	<p>Comme l'auteur le dit:<q>Shut the fuck up</q></p>						<!-- Utile pour les citations courtes, incluse dans des phrases -->
+
+	<code>																		<!-- Utile pour partager du code en respectant la sémentique -->
+		for _ in range(1, 25):
+			print("miaou")
+	</code>
+
+	<table>																		<!-- Permet de créer un tableau -->
+		<caption>
+			Tableau des trucs que j'ai vu ou pas								<!-- Pour donner une description du tableau, améliorant l'accessibilité -->
+		</caption>
+		<tr>																	<!-- Créer une nouvelle ligne pour y placer les cellules -->
+			<th>Titre</th>														<!-- Créer une cellule header -->
+			<th>Vue</th>
+		</tr>
+		<tr>
+			<td>Gravity Fall</td>												<!-- Créer une cellule de données -->
+			<td>Non</td>
+		</tr>
+		<tr>
+			<td>Amphibia</td>
+			<td>Oui</td>
+		</tr>
+	</table>
+
+</main>
 </body>
 </html>
