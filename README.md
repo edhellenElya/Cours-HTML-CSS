@@ -1,3 +1,3 @@
 # Courses HTML/CSS
 
-This repo is for education purpose.
+This repo is for educational purpose.
