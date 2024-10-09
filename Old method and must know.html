@@ -23,3 +23,21 @@ alors que span découpe une section inline -->
     <h1>Première section</h1>
     <p>Une section dans une phrase:<span>prout</span></p>
 </div>
+
+<!-- On peut ajouter une page web dans notre page web grâce à 
+la balise <iframe> qui ajoutera un élément 
+inline pour afficher un document HTML. 
+L'attribut title est là pour l'accessibilité et le SEO.
+La hauteur et la largeur ( en px par défaut ) sont gérer 
+grâce aux attribut correspondant et non pas avec CSS.
+On peut enlever ou modifier la bordures par défaut 
+grâce à la propriété CSS border -->
+
+<iframe src="https://www.monsite.com" title="Mon site" 
+height="200" width="300" style="border: none;" name="iframe_a"></iframe>
+
+<!-- On peut aussi choisir une iframe comme cible d'un lien,
+ l'attribut target doit correspondre à l'attribut name=""
+ de la balise <iframe> -->
+
+<a href="https://www.bullshit.com" target="iframe_a">Bullshit</a>
